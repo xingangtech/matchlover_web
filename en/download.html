@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html  lang="en">
+  
+
+<head>
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" id="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="../favicon%EF%B9%96time=1.ico" type="image/x-icon" />
+	<link href="../css/index%EF%B9%96time=91.css" rel="stylesheet">
+
+	
+	<title>Download APPs | FOR-U Smart Freight</title>
+	<meta name="keywords" content='FOR-U Download' />
+	<meta name="description" content='Welcome to download FOR-U Carrier and FOR-U Shipper Apps on this page.'>
+	<meta name="author" content="FOR-U">
+	<link href="../css/en%EF%B9%96time=90.css" rel="stylesheet">
+	
+
+	
+	<link rel="canonical" href="download.html" />
+	<script charset='UTF-8' src="https://static.sensorsdata.cn/sdk/1.15.26/sensorsdata.min.js"></script>
+  	<script>
+		const hostStr = window.location.host.split('.')[0];
+		const isDev = /^(\d|localhost|dev|[dtr]\d)/.test(hostStr);
+		var show_log = false
+		var server_url = 'https://fydata.fuyoukache.com/sa?project=production'//神策数据接受地址
+		if (isDev) {
+			server_url = 'https://fydata.fuyoukache.com/sa?project=default'
+			show_log = true
+		}
+		var sensors = window['sensorsDataAnalytic201505'];
+		sensors.init({
+			server_url: server_url,
+			heatmap: {
+			},
+			show_log: show_log,
+			preset_properties: {
+				//是否采集 $url 页面地址作为公共属性，默认值 false。
+				url: true,
+				//是否采集 $title 页面标题作为公共属性，默认值 false。
+				title: true,
+			}
+		});
+		sensors.registerPage({
+			platform_type: "web", data_source: "senior_02", product_name: "官网",
+			app_id: "FYUnknown", page_id: "downloadEn"
+		})
+		sensors.quick('autoTrack');
+
+	</script>
+</head>
+
+<body>
+  <div class="download_page">
+    
+      <div class="flex">
+        <a href="https://oas.for-u.com/#/customer/download">Shippers</a>
+        <a href="https://oas.for-u.com/#/driver/download">Carriers</a>
+      </div>
+      
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+			<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" id="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon%EF%B9%96time=1.ico" type="image/x-icon" />
+	<link href="css/index%EF%B9%96time=91.css" rel="stylesheet">
+
+	
+	<title>福佑大脑-以大数据和AI技术为核心构建智能物流系统</title>
+	<meta name="keywords" content='福佑大脑、中台系统、智能分单、智能调度、智能定价、智能报价、智能服务' />
+  <meta name="description" content='福佑卡车（FOR-U）是专注于整车运输的科技物流平台，以大数据和AI技术为核心构建智能物流系统，为上下游提供从询价、发货到交付、结算的全流程履约服务，帮助货主企业及卡车司机降低信息获取成本、提高车辆运行效率、优化运输服务体验。'>
+	<meta name="author" content="福佑卡车">
+	
+
+	
+	<link rel="canonical" href="brain.html" />
+	<script charset='UTF-8' src="https://static.sensorsdata.cn/sdk/1.15.26/sensorsdata.min.js"></script>
+  	<script>
+		const hostStr = window.location.host.split('.')[0];
+		const isDev = /^(\d|localhost|dev|[dtr]\d)/.test(hostStr);
+		var show_log = false
+		var server_url = 'https://fydata.fuyoukache.com/sa?project=production'//神策数据接受地址
+		if (isDev) {
+			server_url = 'https://fydata.fuyoukache.com/sa?project=default'
+			show_log = true
+		}
+		var sensors = window['sensorsDataAnalytic201505'];
+		sensors.init({
+			server_url: server_url,
+			heatmap: {
+			},
+			show_log: show_log,
+			preset_properties: {
+				//是否采集 $url 页面地址作为公共属性，默认值 false。
+				url: true,
+				//是否采集 $title 页面标题作为公共属性，默认值 false。
+				title: true,
+			}
+		});
+		sensors.registerPage({
+			platform_type: "web", data_source: "senior_02", product_name: "官网",
+			app_id: "FYUnknown", page_id: "fuyouBrain"
+		})
+		sensors.quick('autoTrack');
+
+	</script>
+</head>
+<body>
+	
+		
+	<div class="header">
+		<div class="logo"><a href="index.html"><img src="https://public.fuyoukache.com/for-u-smart-freight.png" alt=""></a>
+		</div>
+		<div class="nav_btn "><span></span><span></span><span></span></div>
+		<ul class="nav">
+			<li><a href="index.html"><span>首页</span></a></li>
+			<li><a href="shipper.html"><span>货主发货</span></a></li>
+			<li><a href="carrier.html"><span>司机接单</span></a></li>
+			<li><a href="download.html" class="block-sm">APP下载</a></li>
+			<li><a href="javascript:void(0)" class="down_a hover_pop hidden-sm">APP下载 <div class="pop">
+						<img src="https://public.fuyoukache.com/foryou_www_juhe_erweima1.png" alt="">
+					</div></a></li>
+			<li class="hover_pop about_nav"> <a href="about.html">了解福佑</a>
+				<div class="dropdown pop  hidden-sm">
+					<a href="about.html">关于</a>
+					<a href="news.html">新闻</a>
+					<a href="about.html#job">人才</a>
+				</div>
+			</li>
+				<li><a href="en/index.html"><span>EN</span></a></li>
+		</ul>
+	</div>
+	
+   <div class="slide brain_slide flex-hv-center">
+    <div class="container">
+      <div class="brain">
+        <img src="https://public.fuyoukache.com/foryou_www_brain_tuling_1.png" class="img_tt">
+        <div class="tt">智能定价系统<br>
+          Smart Pricing System</div>
+        <div class="desc line">以大数据破解人工议价<br>
+          对整车数据进行大量积累、清洗与分析<br>
+          实时计算整车运价</div>
+        <div class="desc">
+          <img src="images/icon4%EF%B9%96time=1.png" class="icon">
+          <p>特征工程提取数据<br>
+            实时算法计算价格<br>
+            评估机制优化算法</p>
+        </div>
+      </div>
+      <img src="https://public.fuyoukache.com/foryou_www_brain_img2_1.png" class="img">
+    </div>
+  </div>
+<div class="slide brain_slide1 brain_slide flex-hv-center">
+    <div class="container">
+      <div class="brain">
+        <img src="https://public.fuyoukache.com/foryou_www_brain_luopan_1.png" class="img_tt">
+        <div class="tt">智能分单系统<br>
+          Smart Dispatching System</div>
+        <div class="desc line">基于机器学习和算法智能分析运单与司机信息<br>
+          在算法中进行预测，将运单与运力进行最优匹配<br>
+          最大程度提升车辆运行效率</div>
+        <div class="desc">
+          <img src="images/icon4%EF%B9%96time=1.png" class="icon">
+          <p>通过运筹优化与机器学习智能分析运单<br>
+            基于效率最优原则进行运力分配<br>
+            多角度优化同时预测运力需求</p>
+        </div>
+      </div>
+      <img src="https://public.fuyoukache.com/foryou_www_brain_img1_1.png" class="img">
+    </div>
+  </div>
+
+ 
+
+  <div class="slide brain_slide flex-hv-center">
+    <div class="container">
+      <div class="brain">
+        <img src="https://public.fuyoukache.com/foryou_www_brain_xianzhi_2.png" class="img_tt">
+        <div class="tt">智能服务系统<br>
+          Smart Service System</div>
+        <div class="desc line">结合大量真实的运输数据<br>
+          通过运力风控、智能预警和智能客服<br>
+          让拥有不同承运经验的运力输出稳定、统一的标准化服务</div>
+        <div class="desc">
+          <img src="images/icon4%EF%B9%96time=1.png" class="icon">
+          <p>自动定位 轨迹全程可视<br>
+            智能预警 降低异常率<br>
+            运力风控 保障服务质量</p>
+        </div>
+      </div>
+      <img src="https://public.fuyoukache.com/foryou_www_brain_img3_3.png" class="img">
+    </div>
+  </div>
+	
+		<div class="footer flex-hv-center">
+			<div class="container">
+				<div class="flex">
+	
+	      <div>
+					<p>7*24小时客服</p>
+					<div class="title">400-056-5666</div>
+				</div>
+	
+					<div>
+						<div class="icon_links">
+							<a href="javascript:void(0)" class="hover_pop"><img src="images/icon1.png" class="icon">
+								<div class="pop">
+									<img src="https://public.fuyoukache.com/foryou_www_wechat_erweima.png" alt="">
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="hover_pop hidden-sm"><img src="images/icon2.png" class="icon">
+								<div class="pop">
+									<img src="https://public.fuyoukache.com/foryou_www_douyin_erweima.png" alt="">
+								</div>
+							</a>
+							<a href="https://v.douyin.com/JwFF6PF/" target="_blank" class="hover_pop block-sm"><img
+									src="images/icon2.png" class="icon">
+							</a>
+							<a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAirAOErjUwMHCclpkOBr0AlR0fUwv1z6g2OL3mGQffFk/"
+								target="_blank"><img src="images/icon3.png" class="icon"></a>
+							<a href="https://space.bilibili.com/378334412" target="_blank"><img src="images/bilibili%EF%B9%96time=1.png"
+									class="icon" style="height:0.22rem"></a>
+									
+						</div>
+					</div>
+				</div>
+					
+	<div class="copy">© 2021 北京福佑多多信息技术有限公司<br>
+					<a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2021004538号</a> &emsp;
+<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802034470" target="_blank">京公网安备11010802034470号</a>
+				</div>
+	
+			
+			</div>
+		</div>
+    <script>
+	document.querySelector(".nav_btn").onclick = function () {
+		var parent = document.querySelector(".header")
+		if (parent.classList.contains('active')) {
+			parent.classList.remove('active')
+		} else {
+			parent.classList.add('active')
+		}
+	}
+</script>
+
+</body>
+
+</html>

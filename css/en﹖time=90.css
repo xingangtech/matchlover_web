@@ -1,0 +1,59 @@
+
+.three_list a.btn{width:3.5rem}
+.driver_slide .note{max-width:9rem}
+.driver_slide .note .desc, .driver_slide_fullscreen .note .desc{text-align: left;max-width: 100%;}
+.text-full a.btn{min-width:2.3rem}
+.index_comment .item .desc{min-height:1.6rem}
+.tow_list .flex>div p span{line-height: 1.6;font-size:0.3rem;margin-bottom:0.1rem}
+.tow_list .flex>div p b{line-height: 1.6;font-size:0.22rem;font-weight: normal;margin-bottom:0.4rem; display: block;}
+.tow_list .abs{width:auto}
+.customer_imgs_slide .title{font-size:0.34rem;padding:0.46rem 0}
+.tancybox .neirong .desc{text-align: left;}
+.car_model_list .item .img_con{height:1.85rem;display: flex;align-items: center;justify-content: center;}
+.four_icon{padding:1.5rem 0.3rem;background: #F2F2F2; }
+.four_icon .container{display: flex; flex-wrap:wrap; justify-content: space-between;}
+.four_icon .title{padding-bottom:1.2rem}
+.four_icon .item{padding:0.5rem 0;display: flex;align-items: center;}
+.four_icon .item .tt{font-size:0.34rem;flex:1;min-width: 5.7rem;padding-left:0.2rem}
+.four_icon .item .img_con{width:1.4rem;height:1.18rem;display: flex; align-items: center;justify-content: center;}
+.four_icon .item .icon{max-height:100%;max-width:100%;object-fit: contain;}
+.about1{background-image: url(https://public.fuyoukache.com/foryou_www_about_index1_tiny.jpg) ;}
+.title{font-size:0.5rem}
+.title_40{font-size:0.4rem}
+.text-full .subtitle{font-size:0.3rem}
+.about_zeren .img{max-height: 4.4rem;}
+.driver_slide .note .tt, .driver_slide_fullscreen .note .tt{font-size:.46rem}
+.about_zeren .right{padding:0 0 0 0.6rem}
+.about3 .title{font-size:0.4rem}
+.towImgs>div img{margin-bottom:0.46rem}
+.text-full .smalltitle{line-height: 1.8;}
+.info_down_slide .text-full{height:50%;justify-content: flex-end;}
+.partner .img{width:25%}
+.copy a.grey{color:#fff;padding-left:0.6rem}
+.copy a:hover{color:#707070;}
+
+
+@media (max-width:992px)/*平板*/
+{  
+  .three_list a.btn{width:4rem}
+  .four_icon .container{justify-content: center;}
+  .about_zeren .right {
+    padding: 0.6rem 0;
+}
+}
+
+@media (max-width:767px){/*手机*/
+  .title{font-size:0.42rem}
+  .about3 .title{padding:0;}
+  .four_icon .item .tt{min-width:5rem}
+  .about_hr{padding:0;font-size:0.3rem}
+  .about_zeren,.history .item .note,.text-full .s_title{font-size:0.3rem}
+  .tow_list .flex>div p span{font-size:0.36rem}
+  .tow_list .flex>div p b{font-size:0.3rem}
+  .qiaoliang_slide .title{padding:0 0 0.2rem}
+  .qiaoliang_slide .text-full{padding-top:0.5rem;padding-bottom:2rem}
+  .info_down_slide .text-full{padding:0;}
+  .driver_slide .note .tt, .driver_slide_fullscreen .note .tt{font-size:0.4rem}
+  .partner .img {width: 50%;}
+
+}
